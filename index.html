@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>RESTUARANTIN</title>
+</head>
+<body>
+    <section class="showcase">
+       <header>
+           <h2 class="logo">RESTUARIN</h2>
+           <div class="toggle"></div>
+       </header>
+       <video src="IMAGES/bg1.mp4"muted loop autoplay></video>
+       <div class="overlay"></div>
+       <div class="text">
+           <h2>Never stop</h2>
+           <h3>taste is everything</h3>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil voluptatum perferendis quibusdam numquam natus ipsa quae nostrum deleniti tempore doloremque!</p>
+           <a href="#">Explore</a>
+       </div>
+       <div class="social">
+        <a href="#"><i class="fab fa-instagram"></i></a>     
+        <a href="#"><i class="fab fa-facebook"></i></a>  
+        <a href="#"><i class="fab fa-twitter"></i></a>    
+        </div>
+    </section>   
+       <div class="menu">
+           <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">order</a></li>
+               <li><a href="#">login</a></li>
+               <li><a href="#">reviews</a></li>
+               <li><a href="#">aboutus</a></li>
+           </ul>
+        </div>
+
+        <script>
+            const menuToggle=document.querySelector('.toggle')
+            const showcase=document.querySelector('.showcase')
+
+            menuToggle.addEventListener('click',()=>{
+                menuToggle.classList.toggle('active')
+                showcase.classList.toggle('active')
+            })
+        </script>
+    
+</body>
+</html>
